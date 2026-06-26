@@ -1,0 +1,26 @@
+import { createInterFont } from "@tamagui/font-inter";
+import { createSystemFont, fonts as baseFonts } from "@tamagui/config/v5";
+
+const body = createInterFont();
+const heading = createInterFont({
+    face: {
+        700: { normal: "InterBold" },
+    },
+});
+
+const mono = createSystemFont({
+    sizeLineHeight: (size) => (size >= 16 ? size * 1.2 + 8 : size * 1.15 + 5),
+    font: {
+        family: 'ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace',
+        weight: {
+            0: "400",
+        },
+    },
+});
+
+export const fonts = {
+    ...baseFonts,
+    body,
+    heading,
+    mono,
+};

@@ -1,0 +1,26 @@
+{
+  "name": "@cg-saas/db",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts"
+  },
+  "scripts": {
+    "with-env": "dotenv -e ../../.env --",
+    "db:generate": "bun run with-env drizzle-kit generate",
+    "db:push": "bun run with-env drizzle-kit push",
+    "db:migrate": "bun run with-env drizzle-kit migrate",
+    "db:studio": "bun run with-env drizzle-kit studio",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.4",
+    "drizzle-orm": "^0.45.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^6.0.2"
+  }
+}
