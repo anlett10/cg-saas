@@ -2,13 +2,13 @@ import { createRequire as __cr } from "module"; const require = __cr(import.meta
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 
-// ../../node_modules/.bun/@tamagui+create-theme@2.3.3+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/isMinusZero.mjs
+// ../../node_modules/.bun/@tamagui+create-theme@2.4.0+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/isMinusZero.mjs
 function isMinusZero(value) {
   return 1 / value === Number.NEGATIVE_INFINITY;
 }
 __name(isMinusZero, "isMinusZero");
 
-// ../../node_modules/.bun/@tamagui+create-theme@2.3.3+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/themeInfo.mjs
+// ../../node_modules/.bun/@tamagui+create-theme@2.4.0+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/themeInfo.mjs
 var THEME_INFO = /* @__PURE__ */ new Map();
 var getThemeInfo = /* @__PURE__ */ __name((theme, name) => {
   return THEME_INFO.get(name || JSON.stringify(theme));
@@ -22,7 +22,7 @@ var setThemeInfo = /* @__PURE__ */ __name((theme, info) => {
   THEME_INFO.set(JSON.stringify(info.definition), next);
 }, "setThemeInfo");
 
-// ../../node_modules/.bun/@tamagui+create-theme@2.3.3+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/createTheme.mjs
+// ../../node_modules/.bun/@tamagui+create-theme@2.4.0+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/createTheme.mjs
 var identityCache = /* @__PURE__ */ new Map();
 function createThemeWithPalettes(palettes, defaultPalette, definition, options, name, skipCache = false) {
   if (!palettes[defaultPalette]) {
@@ -88,7 +88,7 @@ var getValue = /* @__PURE__ */ __name((palette, value) => {
   return palette[index];
 }, "getValue");
 
-// ../../node_modules/.bun/@tamagui+create-theme@2.3.3+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/helpers.mjs
+// ../../node_modules/.bun/@tamagui+create-theme@2.4.0+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/helpers.mjs
 function objectEntries(obj) {
   return Object.entries(obj);
 }
@@ -98,13 +98,13 @@ function objectFromEntries(arr) {
 }
 __name(objectFromEntries, "objectFromEntries");
 
-// ../../node_modules/.bun/@tamagui+create-theme@2.3.3+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/masks.mjs
+// ../../node_modules/.bun/@tamagui+create-theme@2.4.0+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/masks.mjs
 var createMask = /* @__PURE__ */ __name((createMask2) => typeof createMask2 === "function" ? {
   name: createMask2.name || "unnamed",
   mask: createMask2
 } : createMask2, "createMask");
 
-// ../../node_modules/.bun/@tamagui+create-theme@2.3.3+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/applyMask.mjs
+// ../../node_modules/.bun/@tamagui+create-theme@2.4.0+7492c01c6988791b/node_modules/@tamagui/create-theme/dist/esm/applyMask.mjs
 function applyMask(theme, mask, options = {}, parentName, nextName) {
   const info = getThemeInfo(theme, parentName);
   if (!info) {
@@ -145,7 +145,7 @@ function applyMaskStateless(info, mask, options = {}, parentName) {
 }
 __name(applyMaskStateless, "applyMaskStateless");
 
-// ../../node_modules/.bun/@tamagui+theme-builder@2.3.3+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/ThemeBuilder.mjs
+// ../../node_modules/.bun/@tamagui+theme-builder@2.4.0+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/ThemeBuilder.mjs
 var ThemeBuilder = class {
   static {
     __name(this, "ThemeBuilder");
@@ -506,7 +506,7 @@ function hsla(hue, saturation, lightness, alpha) {
 }
 __name(hsla, "hsla");
 
-// ../../node_modules/.bun/@tamagui+theme-builder@2.3.3+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/defaultComponentThemes.mjs
+// ../../node_modules/.bun/@tamagui+theme-builder@2.4.0+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/defaultComponentThemes.mjs
 var defaultComponentThemes = {
   ListItem: {
     template: "surface1"
@@ -567,14 +567,14 @@ var defaultComponentThemes = {
   }
 };
 
-// ../../node_modules/.bun/@tamagui+theme-builder@2.3.3+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/helpers.mjs
+// ../../node_modules/.bun/@tamagui+theme-builder@2.4.0+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/helpers.mjs
 var objectKeys = /* @__PURE__ */ __name((obj) => Object.keys(obj), "objectKeys");
 function objectFromEntries2(arr) {
   return Object.fromEntries(arr);
 }
 __name(objectFromEntries2, "objectFromEntries");
 
-// ../../node_modules/.bun/@tamagui+theme-builder@2.3.3+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/defaultTemplates.mjs
+// ../../node_modules/.bun/@tamagui+theme-builder@2.4.0+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/defaultTemplates.mjs
 var getTemplates = /* @__PURE__ */ __name(() => {
   const lightTemplates = getBaseTemplates("light");
   const darkTemplates = getBaseTemplates("dark");
@@ -702,7 +702,7 @@ var getBaseTemplates = /* @__PURE__ */ __name((scheme) => {
 }, "getBaseTemplates");
 var defaultTemplates = getTemplates();
 
-// ../../node_modules/.bun/@tamagui+theme-builder@2.3.3+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/getThemeSuitePalettes.mjs
+// ../../node_modules/.bun/@tamagui+theme-builder@2.4.0+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/getThemeSuitePalettes.mjs
 var paletteSize = 12;
 var PALETTE_BACKGROUND_OFFSET = 6;
 var generateColorPalette = /* @__PURE__ */ __name(({
@@ -768,7 +768,7 @@ function getThemeSuitePalettes(palette) {
 }
 __name(getThemeSuitePalettes, "getThemeSuitePalettes");
 
-// ../../node_modules/.bun/@tamagui+theme-builder@2.3.3+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/createThemes.mjs
+// ../../node_modules/.bun/@tamagui+theme-builder@2.4.0+7492c01c6988791b/node_modules/@tamagui/theme-builder/dist/esm/createThemes.mjs
 function createThemes(props) {
   const {
     accent,
@@ -1017,7 +1017,7 @@ function createPalettes(palettes) {
 }
 __name(createPalettes, "createPalettes");
 
-// ../../node_modules/.bun/@tamagui+themes@2.3.3+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/generated-v5.mjs
+// ../../node_modules/.bun/@tamagui+themes@2.4.0+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/generated-v5.mjs
 function t(a) {
   let res = {};
   for (const [ki, vi] of a) {
@@ -1545,7 +1545,7 @@ var themes = {
   dark_neutral_SliderActive: n124
 };
 
-// ../../node_modules/.bun/@tamagui+themes@2.3.3+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/v5-templates.mjs
+// ../../node_modules/.bun/@tamagui+themes@2.4.0+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/v5-templates.mjs
 var objectFromEntries3 = /* @__PURE__ */ __name((entries) => {
   return Object.fromEntries(entries);
 }, "objectFromEntries");
@@ -1638,7 +1638,7 @@ var getBaseTemplates2 = /* @__PURE__ */ __name((scheme) => {
 }, "getBaseTemplates");
 var v5Templates = getTemplates2();
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/blue.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/blue.mjs
 var blue = {
   blue1: "#0d1520",
   blue2: "#111927",
@@ -1654,7 +1654,7 @@ var blue = {
   blue12: "#c2e6ff"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/gray.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/gray.mjs
 var gray = {
   gray1: "#111111",
   gray2: "#191919",
@@ -1670,7 +1670,7 @@ var gray = {
   gray12: "#eeeeee"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/green.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/green.mjs
 var green = {
   green1: "#0e1512",
   green2: "#121b17",
@@ -1686,7 +1686,7 @@ var green = {
   green12: "#b1f1cb"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/orange.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/orange.mjs
 var orange = {
   orange1: "#17120e",
   orange2: "#1e160f",
@@ -1702,7 +1702,7 @@ var orange = {
   orange12: "#ffe0c2"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/pink.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/pink.mjs
 var pink = {
   pink1: "#191117",
   pink2: "#21121d",
@@ -1718,7 +1718,7 @@ var pink = {
   pink12: "#fdd1ea"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/purple.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/purple.mjs
 var purple = {
   purple1: "#18111b",
   purple2: "#1e1523",
@@ -1734,7 +1734,7 @@ var purple = {
   purple12: "#ecd9fa"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/red.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/red.mjs
 var red = {
   red1: "#191111",
   red2: "#201314",
@@ -1750,7 +1750,7 @@ var red = {
   red12: "#ffd1d9"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/teal.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/teal.mjs
 var teal = {
   teal1: "#0d1514",
   teal2: "#111c1b",
@@ -1766,7 +1766,7 @@ var teal = {
   teal12: "#adf0dd"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/dark/yellow.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/dark/yellow.mjs
 var yellow = {
   yellow1: "#14120b",
   yellow2: "#1b180f",
@@ -1782,7 +1782,7 @@ var yellow = {
   yellow12: "#f6eeb4"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/blue.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/blue.mjs
 var blue2 = {
   blue1: "#fbfdff",
   blue2: "#f4faff",
@@ -1798,7 +1798,7 @@ var blue2 = {
   blue12: "#113264"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/gray.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/gray.mjs
 var gray2 = {
   gray1: "#fcfcfc",
   gray2: "#f9f9f9",
@@ -1814,7 +1814,7 @@ var gray2 = {
   gray12: "#202020"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/green.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/green.mjs
 var green2 = {
   green1: "#fbfefc",
   green2: "#f4fbf6",
@@ -1830,7 +1830,7 @@ var green2 = {
   green12: "#193b2d"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/orange.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/orange.mjs
 var orange2 = {
   orange1: "#fefcfb",
   orange2: "#fff7ed",
@@ -1846,7 +1846,7 @@ var orange2 = {
   orange12: "#582d1d"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/pink.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/pink.mjs
 var pink2 = {
   pink1: "#fffcfe",
   pink2: "#fef7fb",
@@ -1862,7 +1862,7 @@ var pink2 = {
   pink12: "#651249"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/purple.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/purple.mjs
 var purple2 = {
   purple1: "#fefcfe",
   purple2: "#fbf7fe",
@@ -1878,7 +1878,7 @@ var purple2 = {
   purple12: "#402060"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/red.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/red.mjs
 var red2 = {
   red1: "#fffcfc",
   red2: "#fff7f7",
@@ -1894,7 +1894,7 @@ var red2 = {
   red12: "#641723"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/teal.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/teal.mjs
 var teal2 = {
   teal1: "#fafefd",
   teal2: "#f3fbf9",
@@ -1910,7 +1910,7 @@ var teal2 = {
   teal12: "#0d3d38"
 };
 
-// ../../node_modules/.bun/@tamagui+colors@2.3.3/node_modules/@tamagui/colors/dist/esm/light/yellow.mjs
+// ../../node_modules/.bun/@tamagui+colors@2.4.0/node_modules/@tamagui/colors/dist/esm/light/yellow.mjs
 var yellow2 = {
   yellow1: "#fdfdf9",
   yellow2: "#fefce9",
@@ -1926,7 +1926,7 @@ var yellow2 = {
   yellow12: "#473b1f"
 };
 
-// ../../node_modules/.bun/@tamagui+themes@2.3.3+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/opacify.mjs
+// ../../node_modules/.bun/@tamagui+themes@2.4.0+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/opacify.mjs
 function opacify(color, opacity = 0.1) {
   if (typeof color !== "string") return color;
   if (color.startsWith("hsl")) {
@@ -1950,7 +1950,7 @@ function opacify(color, opacity = 0.1) {
 }
 __name(opacify, "opacify");
 
-// ../../node_modules/.bun/@tamagui+themes@2.3.3+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/v5-themes.mjs
+// ../../node_modules/.bun/@tamagui+themes@2.4.0+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/v5-themes.mjs
 var V5_BG_OFFSET = 6 + 1;
 var v5ComponentThemes = {
   Button: {
@@ -2246,7 +2246,7 @@ themes2.dark.background;
 themes2.dark.accent1;
 themes2.dark.nonValid;
 
-// ../../node_modules/.bun/@tamagui+themes@2.3.3+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/utils.mjs
+// ../../node_modules/.bun/@tamagui+themes@2.4.0+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/utils.mjs
 function sizeToSpace(v) {
   if (v === 0) return 0;
   if (v === 2) return 0.5;
@@ -2257,7 +2257,7 @@ function sizeToSpace(v) {
 }
 __name(sizeToSpace, "sizeToSpace");
 
-// ../../node_modules/.bun/@tamagui+themes@2.3.3+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/v5-tokens.mjs
+// ../../node_modules/.bun/@tamagui+themes@2.4.0+7492c01c6988791b/node_modules/@tamagui/themes/dist/esm/v5-tokens.mjs
 var size = {
   $0: 0,
   "$0.25": 2,
@@ -2328,7 +2328,7 @@ var tokens = {
   size
 };
 
-// ../../node_modules/.bun/@tamagui+shorthands@2.3.3+7492c01c6988791b/node_modules/@tamagui/shorthands/dist/esm/v4.mjs
+// ../../node_modules/.bun/@tamagui+shorthands@2.4.0+7492c01c6988791b/node_modules/@tamagui/shorthands/dist/esm/v4.mjs
 var shorthands = createShorthands({
   // text
   text: "textAlign",
@@ -2371,7 +2371,7 @@ function createShorthands(a) {
 }
 __name(createShorthands, "createShorthands");
 
-// ../../node_modules/.bun/@tamagui+config@2.3.3+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-fonts.mjs
+// ../../node_modules/.bun/@tamagui+config@2.4.0+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-fonts.mjs
 import { createFont, getVariableValue } from "@tamagui/core";
 var defaultSizes = {
   1: 12,
@@ -2433,7 +2433,7 @@ var fonts = {
   })
 };
 
-// ../../node_modules/.bun/@tamagui+config@2.3.3+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-media.mjs
+// ../../node_modules/.bun/@tamagui+config@2.4.0+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-media.mjs
 var breakpoints = {
   100: 100,
   200: 200,
@@ -2569,7 +2569,7 @@ var mediaQueryDefaultActive = {
   "height-lg": false
 };
 
-// ../../node_modules/.bun/@tamagui+config@2.3.3+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-base.mjs
+// ../../node_modules/.bun/@tamagui+config@2.4.0+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-base.mjs
 var selectionStyles = /* @__PURE__ */ __name((theme) => theme.color5 ? {
   backgroundColor: theme.color5,
   color: theme.color11
@@ -2594,7 +2594,7 @@ var defaultConfig = {
   settings
 };
 
-// ../../node_modules/.bun/@tamagui+use-presence@2.3.3+7492c01c6988791b/node_modules/@tamagui/use-presence/dist/esm/PresenceContext.mjs
+// ../../node_modules/.bun/@tamagui+use-presence@2.4.0+7492c01c6988791b/node_modules/@tamagui/use-presence/dist/esm/PresenceContext.mjs
 import * as React from "react";
 import { jsx } from "react/jsx-runtime";
 var PresenceContext = React.createContext(null);
@@ -2606,7 +2606,7 @@ var ResetPresence = /* @__PURE__ */ __name((props) => {
   });
 }, "ResetPresence");
 
-// ../../node_modules/.bun/@tamagui+use-presence@2.3.3+7492c01c6988791b/node_modules/@tamagui/use-presence/dist/esm/usePresence.mjs
+// ../../node_modules/.bun/@tamagui+use-presence@2.4.0+7492c01c6988791b/node_modules/@tamagui/use-presence/dist/esm/usePresence.mjs
 import * as React2 from "react";
 function usePresence() {
   const context = React2.useContext(PresenceContext);
@@ -2625,7 +2625,7 @@ function usePresence() {
 }
 __name(usePresence, "usePresence");
 
-// ../../node_modules/.bun/@tamagui+constants@2.3.3+e14d3f224186685e/node_modules/@tamagui/constants/dist/esm/constants.mjs
+// ../../node_modules/.bun/@tamagui+constants@2.4.0+e14d3f224186685e/node_modules/@tamagui/constants/dist/esm/constants.mjs
 import { useEffect as useEffect2, useLayoutEffect } from "react";
 var isBrowser = typeof navigator !== "undefined" && typeof location !== "undefined";
 var isServer = !isBrowser;
@@ -2638,7 +2638,7 @@ var isIos = process.env.TEST_NATIVE_PLATFORM === "ios" || process.env.TEST_NATIV
 var supportsDynamicColorIOS = isIos || process.env.TAMAGUI_DYNAMIC_COLOR_IOS === "1";
 var isTV = process.env.TEST_NATIVE_PLATFORM === "androidtv" || process.env.TEST_NATIVE_PLATFORM === "tvos";
 
-// ../../node_modules/.bun/tamagui@2.3.3+67225f6d60ffc20f/node_modules/tamagui/dist/esm/createTamagui.mjs
+// ../../node_modules/.bun/tamagui@2.4.0+67225f6d60ffc20f/node_modules/tamagui/dist/esm/createTamagui.mjs
 import { createTamagui as createTamaguiCore } from "@tamagui/core";
 var createTamagui = process.env.NODE_ENV !== "development" ? createTamaguiCore : (conf) => {
   const sizeTokenKeys = ["$true"];
@@ -2767,7 +2767,7 @@ function createTakeoutThemes() {
 __name(createTakeoutThemes, "createTakeoutThemes");
 var takeoutThemes = createTakeoutThemes();
 
-// ../../node_modules/.bun/@tamagui+animation-helpers@2.3.3/node_modules/@tamagui/animation-helpers/dist/esm/normalizeTransition.mjs
+// ../../node_modules/.bun/@tamagui+animation-helpers@2.4.0/node_modules/@tamagui/animation-helpers/dist/esm/normalizeTransition.mjs
 var SPRING_CONFIG_KEYS = /* @__PURE__ */ new Set(["stiffness", "damping", "mass", "tension", "friction", "velocity", "overshootClamping", "duration", "bounciness", "speed"]);
 function isSpringConfigKey(key) {
   return SPRING_CONFIG_KEYS.has(key);
@@ -2900,7 +2900,7 @@ function getAnimationConfigsForKeys(normalized, animations2, keys, defaultAnimat
 }
 __name(getAnimationConfigsForKeys, "getAnimationConfigsForKeys");
 
-// ../../node_modules/.bun/@tamagui+animations-css@2.3.3+7492c01c6988791b/node_modules/@tamagui/animations-css/dist/esm/createAnimations.mjs
+// ../../node_modules/.bun/@tamagui+animations-css@2.4.0+7492c01c6988791b/node_modules/@tamagui/animations-css/dist/esm/createAnimations.mjs
 import { transformsToString } from "@tamagui/web";
 import React3 from "react";
 var EXTRACT_MS_REGEX = /(\d+(?:\.\d+)?)\s*ms/;
@@ -3306,7 +3306,7 @@ function createAnimations(animations2) {
 }
 __name(createAnimations, "createAnimations");
 
-// ../../node_modules/.bun/@tamagui+config@2.3.3+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-css.mjs
+// ../../node_modules/.bun/@tamagui+config@2.4.0+e151810052ed4678/node_modules/@tamagui/config/dist/esm/v5-css.mjs
 var easeOut = "cubic-bezier(0.25, 0.1, 0.25, 1)";
 var bouncy = "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
 var animationsCSS = createAnimations({
@@ -3335,7 +3335,7 @@ var animationsCSS = createAnimations({
 });
 var animations = animationsCSS;
 
-// ../../node_modules/.bun/@tamagui+font-inter@2.3.3+7492c01c6988791b/node_modules/@tamagui/font-inter/dist/esm/index.mjs
+// ../../node_modules/.bun/@tamagui+font-inter@2.4.0+7492c01c6988791b/node_modules/@tamagui/font-inter/dist/esm/index.mjs
 import { createFont as createFont2, getVariableValue as getVariableValue2, isWeb } from "@tamagui/core";
 var createInterFont = /* @__PURE__ */ __name((font = {}, {
   sizeLineHeight = /* @__PURE__ */ __name((size2) => size2 + 10, "sizeLineHeight"),
